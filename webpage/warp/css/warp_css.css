@@ -1,0 +1,62 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+body{
+	background-color:orange;
+}
+
+#reset{ 
+background-color:olive;
+color: yellow;
+font-family:liberation-serif;
+	
+}
+
+#submit
+{
+cursor: pointer;
+color: red;
+border-radius: 25px;
+text-decoration: underline;
+font-style: italic;
+background-color:blue;
+font-family: impact;
+
+}
+
+/*responsive design*/
+
+/* Mobile Landscape */
+@media screen and (max-width:480px){
+    body {
+        width:40%;
+		background-color:teal;
+        
+    } 
+     
+}
+
+/*Mobile Portrait*/
+@media screen and (max-width:320px){
+    body{
+        width: 30%;
+		background-color:lime;
+    }
+    
+}
+
+/* Tablet Landscape, pc/laptop monitor*/
+@media screen and (max-width:1024px) {
+    body{
+        width: 100%;
+    }
+}
+
+
+
+    
+
+
