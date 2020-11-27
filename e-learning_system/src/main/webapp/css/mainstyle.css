@@ -1,0 +1,16 @@
+@import "front.css";
+@import "form.css";
+
+
+header {
+    position:absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    background: #B1624EFF;
+	border-bottom:4px solid black;
+}
+
+#content_index{
+margin: 10% 20%;    
+}

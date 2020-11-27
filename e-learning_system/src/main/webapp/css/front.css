@@ -1,0 +1,100 @@
+#front{
+	
+	margin: 10% 20%;
+	background:#5CC8D7FF;
+	font-style:Brush Script MT;
+}
+
+h1{
+	
+}
+#buttonspic{
+	margin-top:5%;
+	margin-left:25%;
+}
+#picbox{
+	 margin-left:25%;
+}
+
+.log{
+	margin: 10px 25%;
+	width: 50%;
+	
+}
+.wrapper {
+    text-align: center;
+	box-sizing:border-box;
+	display:box;
+}
+#info{
+}
+ a {
+	 color: inherit;
+ }
+	 
+a:link{
+	 text-decoration: none;
+	
+}
+#join{
+	font-size:3em;
+	color: #B1624EFF;
+}
+
+#message{
+	font-size:1.5em;
+	  font-weight: bold;
+}
+
+.sign{
+
+  float:left;
+  width:20%;
+  margin:20px 40%;
+  background:#76528BFF;
+  color:#CBCE91FF !important;
+  border:none;
+  position:relative;
+  height:80px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.sign:hover{
+  background:#CBCE91FF;
+  color:#76528BFF!important;
+}
+.sign:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #B1624EFF;
+  transition:400ms ease all;
+}
+.sign:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.sign:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+#urllini{
+    	float:left;
+	width: 100%;
+	background: #4b0082; 
+	border: 3px solid #296C92; 
+	border-radius: 3px; 
+	padding: 6px 15px; 
+	box-sizing: border-box; 
+	margin-bottom: 20px; 
+	font-size: 20px; 
+	color:white;
+}
