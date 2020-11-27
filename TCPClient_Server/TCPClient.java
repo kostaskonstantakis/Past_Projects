@@ -13,9 +13,9 @@ public class TCPClient {
 
 	public static void main(String argv[]) throws Exception {
 
-		//Scanner sc=new Scanner(System.in);
+		Scanner sc=new Scanner(System.in);
 		// System.out.print("input: ");
-		String sentence = "1111\n2222\n3333$"; //sc.nextLine();
+		String sentence = sc.nextLine(); //"1111\n2222\n3333$";   //user input
 		String modifiedSentence = new String(); // initialize
 
 		BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
