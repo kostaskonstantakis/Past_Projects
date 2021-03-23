@@ -1,2 +1,2 @@
 # Past_projects
- All my university course projects. All rights reserved. © 2020.
+ All my University course projects. All rights reserved. © 2021.
