@@ -17,55 +17,50 @@ and open the template in the editor.
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <link rel="stylesheet" type="text/css" href="css/css.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title> Marios Konstantinos Konstantakis</title>
 
 </head>
 
-<body id="main">
-	<header id="header"> 
+<body class="main">
+	<header class="header"> 
         <h1>Marios Konstantinos Konstantakis</h1>
     </header>
     <nav>
-        <ul id="navlist">
+        <ul class="navlist">
             <li class="nav_item"><a class="active" href="#Personal">Personal Info</a></li>
 			<li class="nav_item"><a href="#Interests">Interests</a></li>
-            <li class="nav_item"><a href="#Classes">Classes Attending</a></li>
-			<li class="nav_item"><a href="#Past_Classes">Passed Classes</a></li>
+            <li class="nav_item"><a href="#Experience">Professional Experience</a></li>
+			<li class="nav_item"><a href="#University_Courses">University Courses</a></li>
             <li class="nav_item"><a href="#Contact">Contact Info</a></li>
             <li class="nav_item"><a href="#box_rs_social">Social Media</a></li>
         </ul>
     </nav>
-    <aside id="box_rs_media" >
-        <h3 id="media_head">Media Bar</h3>
-        <section id="img">
+    <aside class="box_rs_media" >
+        <h3 class="media_head">Media Bar</h3>
+        <section class="img">
             <h5>Picture of Egaleo</h5>
-            <a href="css/images/egaleo.jpg" class="img-thumbnail" target="_blank"><img id="pic" src="css/images/egaleo.jpg" alt="Picture of Egaleo"></a>
+            <a href="css/images/egaleo.jpg" class="img-thumbnail" target="_blank"><img class="pic" src="css/images/egaleo.jpg" alt="Picture of Egaleo"></a>
         </section>
             <h5>Sample Video</h5>
-            <video id="video_bar" controls>
+            <video class="video_bar" controls>
                 <source src="media/too metal for gravity.mp4" type="video/mp4">
             </video>
         </section>
-        <section id="audio">
-            <h5>Grudge As Monster-Clay Soil live @ Intrepid Fox 24/11/19</h5>
-			<a target = "_blank" href = "https://www.youtube.com/watch?v=tx-izpRauzw"></a>
-            <!--audio id="audio_bar" controls>
-                <source src="media/LET THE RAIN WASH AWAY PIANO.mp3" type="audio/mp3">
-            </audio-->
-        </section>
     </aside>
     <div>
-        <h3 id="main_subheader">Personal Info</h3>
+        <h3 class="main_subheader">Personal Info</h3>
         <div>
             <section id="Personal" class="boxed">
                  <h4 class="generic_h"><i>Personal Info</i></h4>
                 <ul class="gen_list">
                     <li>Gender: Male</li>
-                    <li>Birthday: 26/Feb/1995</li>
-                    <li>Age: 24</li>
+                    <li>Birthday: 26/02/1995</li>
+                    <li>Age: 29</li>
                     <li>Place of Birth: Athens</li>
                     <li>Hometown: Egaleo</li>
-                    <li>Occupation: University Student</li>
+                    <li>Occupation: Programmer</li>
+					<li>Education: BSc in Computer Science, University of Crete</li>
                 </ul>
             </section>
         </div>
@@ -73,25 +68,25 @@ and open the template in the editor.
         <h4 class="generic_h">Interests</h4>
         <ul class="gen_list">
                 <li>Music</li>
-                <li>Tattoos</li>
                 <li>Animes</li>
                 <li>Football</li>
 				<li>Basketball</li>
         </ul>
         </article>		
-	    <article id="Classes" class="boxed">
-        <h4 class="generic_h">Current Courses</h4>
+	    <article id="Experience" class="boxed">
+        <h4 class="generic_h">Professional Experience</h4>
         <ol class="gen_list">
-			<li>CS335 - Δίκτυα Υπολογιστών</li>
-			<li>CS340 - Compilers</li>
-			<li>CS342 - Parallel Programming</li>  
+			<li>08/07/2024-Now: Web Developer @ OnlyNet</li>
+			<li>24/05/2023-17/03/2024: Software Engineer @ Greek Army</li>
+			<li>13/06/2022-09/12/2022: Application Developer @ Alpha Bank</li>  
+            <li>16/01/2021-15/04/2021: Web Developer @ AboutNet</li> 
         </ol>
         </article>
-		<article id="Past_Classes"  class="boxed">
-            <h4 class="generic_h">Completed Courses</h4>
+		<article id="University_Courses"  class="boxed">
+            <h4 class="generic_h">University Courses</h4>
             <table id="Past_Classes" border="2">
             <tr>
-               <th>Class</th>
+               <th>Course</th>
                <th>  Grade</th>
             </tr>
                  <tr>
@@ -179,6 +174,18 @@ and open the template in the editor.
                      <td> 5</td>
                  </tr>
 				 <tr>
+                     <td>CS335-Computer Networks</td>
+                     <td> 5.5</td>
+                 </tr>
+				 <tr>
+                     <td>CS340-Compilers</td>
+                     <td> 7.5</td>
+                 </tr>
+				 <tr>
+                     <td>CS342-Parallel Programming</td>
+                     <td> 9</td>
+                 </tr>
+				 <tr>
                      <td>CS359-Web Programming</td>
                      <td> 5</td>
                  </tr>
@@ -199,12 +206,24 @@ and open the template in the editor.
                     <td> 5</td>
                 </tr>
 				<tr>
+                    <td>CS499-Thesis Dissertation</td>
+                    <td> 9</td>
+                </tr>
+				<tr>
                     <td>MEM341-Economic Theory I</td>
                     <td> 5</td>
                 </tr>
 				<tr>
                     <td>MEM342-Economic Theory II</td>
                     <td> 5</td>
+                </tr>
+                <tr>
+                    <td><strong>Total Number of Courses</strong></td>
+                    <td><strong>35</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Degree Average</strong></td>
+                    <td><strong>6.12</strong></td>
                 </tr>
             </table>
             </article> 
@@ -214,26 +233,26 @@ and open the template in the editor.
 		<table>
 		<tr><td>Telephone: 210********</td></tr>
         <tr><td>Mobile phone: 69********</td></tr>
-        <tr><td>E-mails: <a href = "mailto:csd3219@csd.uoc.gr"> csd3219@csd.uoc.gr </a> &   
-		<a  href = "mailto:gusslipknot1@gmail.com"> gusslipknot1@gmail.com </a> </td></tr>
+        <tr><td>E-mail:  
+		<a  href = "mailto:kostaskonstantakis6@gmail.com"> kostaskonstantakis6@gmail.com </a> </td></tr>
         </table>
     </section>
 	<article id="box_rs_social" >
             <h4 class="generic_h">Social Media Accounts</h4>
-            <a class="social img-rounded" id="fb" href="https://www.facebook.com/kostas.konstantakis.92" target="_blank"></a>
-            <a class="social img-rounded" id="yt" href="https://www.youtube.com/channel/UCjHmbs65N_6H-LSJ0kRhCJw" target="_blank"></a>
-    </article>
-    <footer id="End"> <style type="text/css" >
+            <a class="social img-rounded" id="github" href="https://github.com/kostaskonstantakis/" target="_blank"></a>
+            <a class="social img-rounded" id="linkedin" href="https://www.linkedin.com/in/kostas-k-8841961a2/" target="_blank"></a>
+    </article> <!--id="End"-->
+    <footer class="End"> <style type="text/css" > 
 	footer{color:yellow;}
 	</style>
 	To go back to the page's top, press
-	<a id ="jump_top" class="btn btn-default" href="#Top" href="css/images/top.jpg" class="img-thumbnail" ><img id="pic" src="css/images/top.jpg" alt="images/top.jpg"></a> 
+	<a id ="jump_top" class="btn btn-default" href="#Top" href="css/images/top.jpg"><img class="pic" src="css/images/top.jpg" alt="images/top.jpg"></a> 
     </footer>
-	<footer  id="translate"><style type="text/css">
-	#translate{color:purple;}
+	<footer  class="translate"><style type="text/css">
+	.translate{color:purple;}
 	</style>
 	To translate to Greek, press
-       <a  class="btn btn-default" href="greek homepage.html" href="css/images/gr.jpg" class="img-thumbnail" target="_blank"><img id="pic" src="css/images/gr.jpg" alt="images/gr.jpg"></a>
+       <a id="translation"  class="btn btn-default" href="greek_homepage.html" href="css/images/gr.jpg" target="_blank"><img class="pic" src="css/images/gr.jpg" alt="images/gr.jpg"></a>
     </footer>
 </body>
 

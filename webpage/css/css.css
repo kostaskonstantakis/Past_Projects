@@ -1,8 +1,8 @@
-#main{
+.main{
     background-image:url("images/partiture.jpg");
 }
 
-header{ /*element selector*/
+header{ 
     align-items: center;
     font-style: oblique;
     font-family:liberation-serif;
@@ -11,7 +11,7 @@ header{ /*element selector*/
     background: linear-gradient(white,orange);
 }
 
-#header:hover{
+.header:hover{
 	align-items:left;
     font-style:bold;
     font-family: monospace;
@@ -23,25 +23,27 @@ header{ /*element selector*/
 }
 
 
-
-#navlist{ /*id selector*/
+.navlist{ 
     list-style-type:none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     overflow: hidden;
     background-color: #777;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    max-width: 920px;
+
 }
 
-#navlist:hover{
-
-
+.navlist:hover{
 background-color:red;
 color:yellow;
 }
 
 
-.nav_item{ /*class selector*/
-    float:left;
+.nav_item{ 
 	color:sienna;
 }
 
@@ -52,13 +54,13 @@ color:yellow;
     padding: 10px 12px;
     text-decoration:none;
 }
-.nav_item a:hover{ /*what happens when the mouse is over this element */
+.nav_item a:hover{
 	
     background-color:white;
     color:orange;
 }
 
-#main_subheader{
+.main_subheader{
     text-align: center;
     text-decoration: underline;
     border-style: solid;
@@ -66,24 +68,16 @@ color:yellow;
     width: 50%;
 }
 
-
-
-
-
-#main_subheader:hover{
+.main_subheader:hover{
     text-align: left;
-    text-decoration: line-through;
-    border-style: thick;
-    background-color:pink;
+    text-decoration:wavy;
+    border-style:thick;
+    background-color:purple;
     width: 100%;
 }
 
 
-
-
-	
-
-#media_head{
+.media_head{
     border-style: ridge;
     border-width: thick;
     border-color: firebrick;
@@ -104,22 +98,24 @@ color:yellow;
 	
 }
 
-#box_rs_media{
+.box_rs_media{
 	background-color:green;
     width: 300px;
-    right:1px;
-    float:right;
+    right:0px;
+   
     position: absolute;
 	box-shadow: 10px 10px 5px #888888;
+    margin-top:20px;
 }
 
-#box_rs_media:hover{
+.box_rs_media:hover{
 	background-color:yellow;
     width: 200px;
     right:1px;
-    float:right;
+    
     position: absolute;
 	box-shadow: 10px 10px 5px #888888;
+    text-align: center;
 }
 
 
@@ -143,24 +139,6 @@ color:yellow;
 	background-color:saddlebrown;
 	
 }
-
-
- .footer{
-	margin-top: auto;
-    background-size: 50px;
-    background-position:center;
-    background-clip:padding-box;
-    transition: background-size 0.2s;
-    display:flex;
-    width: 30px;
-    height: 30px;
-    cursor:pointer;
-    overflow: hidden;
-    text-indent: 100%;
-    white-space:nowrap;
-    }
-
-
 	
 .social{
 	background-color:white;
@@ -182,62 +160,44 @@ color:yellow;
 	
 }
 
-#box_rs_media{
-	background-color:green;
-    width: 300px;
-    right:1px;
-    float:right;
-    position: absolute;
-	text-shadow: 5px 5px 5px #FF0000;
-	
-}
-
-
-#box_rs_media:hover{
-	background-color:yellow;
-    width: 200px;
-    right:1px;
-    float:left;
-    position: absolute;
-}
-
-
-
-#pic{
+.pic{
     width: 100%;
 }
 
-#audio_bar{
+.audio_bar{
     width: 100%;
 }
 
-#video_bar{
+.video_bar{
     width: 100%;
 }
 
-#fb{
-    float:left;
-    background-image:url(images/square-facebook-512.png);
+#github{
+    text-align:justify;
+    background-image:url(images/github.png);
 }
 
 
-#yt{
-	float:right;
-    background-image:url(images/youtube-square-logo-3F9D037665-seeklogo.com.gif);
+#linkedin{
+	text-align: justify;
+    background-image:url(images/linkedin.png);
 }
 
 #box_rs_social{
     background-color:coral;
     width: 120px;
     position: absolute;
-    right: 1px;
+    right: 0px;
 	text-shadow: 5px 5px 5px #008080;
 	border-radius: 15px;
 	border-style: solid;
     border-color: dimgrey;
     border-width: thick;
-}
 
+    display:block;
+    margin-bottom:20px;
+    text-align: center;
+}
 
 #box_rs_social:hover{
     background-color:aqua;
@@ -247,36 +207,38 @@ color:yellow;
 	transform: rotate(-60deg);
 	transform: scale(2,2);
 	transform: skew(25deg,10deg);
-	
 }
 
+#jump_top, #translation {
+max-width:10%;
+}
 
 
 /*responsive design*/
 
 /* Mobile Landscape */
 @media screen and (max-width:480px){
-    #box_rs_media {
-        width:50%;
-        
+    .box_rs_media {
+        width:40%;
+		box-shadow:none; 
     } 
+	
      #personal{
         width: 50%;
     }
     
-    #generic_h{
+    .generic_h{
         width:50%;
     }
     
-    #gen_list li{
+    .gen_list li{
         width: 50%;
     }
     
-    .video {
+    .video_bar {
     position: relative;
 	height: 0;
 	overflow: hidden;
-    
     }
     
 }
@@ -286,16 +248,17 @@ color:yellow;
     #personal{
         width: 30%;
     }
-    #box_rs_media {
-        width:25%;
+    .box_rs_media {
+        width:10%;
+		box-shadow:none; 
     } 
     
-    #generic_h{
+    .generic_h{
         width:25%;
     }
     
     
-    .video {
+    .video_bar {
     position: relative;
 	height: 0;
 	overflow: hidden;
@@ -306,9 +269,41 @@ color:yellow;
 	
 	/* Tablet Landscape, pc/laptop monitor */
 @media screen and (max-width: 1024px) {
-    #box_rs_media{
-        width: 45%;
+    .box_rs_media{
+        width: 30%;
     }
+}
+
+@media screen and (max-width: 1440px) {
+    .box_rs_media{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .box_rs_media {
+        width:50%;
+		box-shadow:none; 
+        
+    } 
+     #personal{
+        width: 50%;
+    }
+    
+    .generic_h{
+        width:50%;
+    }
+    
+    .gen_list li{
+        width: 50%;
+    }
+    
+    .video_bar {
+    position: relative;
+	height: 0;
+	overflow: hidden;
+    }
+    
 }
 
     
