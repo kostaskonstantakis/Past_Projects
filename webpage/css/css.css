@@ -22,7 +22,6 @@ header{
 	
 }
 
-
 .navlist{ 
     list-style-type:none;
     margin: 0 auto;
@@ -240,6 +239,11 @@ max-width:10%;
 	height: 0;
 	overflow: hidden;
     }
+	
+	.navlist {
+		width:100%;
+	}
+	
     
 }
 
@@ -264,8 +268,54 @@ max-width:10%;
 	overflow: hidden;
     }
     
+	.navlist {
+		width:80%;
+	}
         
     }
+	
+	@media screen and (max-width: 425px) { 
+	
+	.navlist {
+		width:80%;
+		
+	}
+	
+	}
+	
+	@media screen and (max-width: 375px) { 
+	
+	.navlist {
+		width:100%;
+		
+	}
+	
+	}
+	
+	@media screen and (max-width: 580px) { 
+	
+	.navlist {
+		display:flex;
+		flex-direction:column;
+		flex-wrap:wrap;
+		
+		columns:2;
+		text-align:center;
+		align-items:center;
+		justify-content:center;
+		justofy-items:center;
+	}
+	
+	}
+	
+	@media screen and (max-width: 320px) { 
+	
+	.navlist {
+		width:100%;
+		
+	}
+	
+	}
 	
 	/* Tablet Landscape, pc/laptop monitor */
 @media screen and (max-width: 1024px) {
@@ -278,6 +328,7 @@ max-width:10%;
     .box_rs_media{
         width: 40%;
     }
+	
 }
 
 @media screen and (max-width:768px){
@@ -303,6 +354,10 @@ max-width:10%;
 	height: 0;
 	overflow: hidden;
     }
+	
+	.navlist {
+		width:100%;
+	}
     
 }
 
