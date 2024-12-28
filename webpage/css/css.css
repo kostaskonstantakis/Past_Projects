@@ -137,7 +137,7 @@ color:yellow;
 	background-color:saddlebrown;
 	
 }
-	*/
+*/
 .social{
 	background-color:white;
     text-align: center;
@@ -211,8 +211,6 @@ color:yellow;
 max-width:10%;
 }
 
-/*responsive design*/
-
 /* Mobile Landscape */
 @media screen and (max-width:480px){
     .box_rs_media {
@@ -241,8 +239,7 @@ max-width:10%;
 	.navlist {
 		width:100%;
 	}
-	
-    
+	   
 }
 
 /*Mobile Portrait*/
@@ -258,7 +255,6 @@ max-width:10%;
     .generic_h{
         width:25%;
     }
-    
     
     .video_bar {
     position: relative;
