@@ -18,8 +18,7 @@ header{
     font-size: 20px;
     text-align: right-side;
     background: linear-gradient(blue,purple);
-	text-decoration: overline;
-	
+	text-decoration: underline; /*overline*/
 }
 
 .navlist{ 
@@ -99,7 +98,7 @@ color:yellow;
 
 .box_rs_media{
 	background-color:green;
-    width: 300px;
+    width: 200px;
     right:0px;
    
     position: absolute;
@@ -109,7 +108,7 @@ color:yellow;
 
 .box_rs_media:hover{
 	background-color:yellow;
-    width: 200px;
+    width: 300px;
     right:1px;
     
     position: absolute;
@@ -130,7 +129,7 @@ color:yellow;
 	
 }
 
-
+/*
 .boxed:hover{
 	transform: rotate(45deg);
 	transform: scale(2,5); 
@@ -138,7 +137,7 @@ color:yellow;
 	background-color:saddlebrown;
 	
 }
-	
+	*/
 .social{
 	background-color:white;
     text-align: center;
@@ -203,15 +202,14 @@ color:yellow;
     width: 120px;
     position: absolute;
     right: 0.5px;
-	transform: rotate(-60deg);
+	/*transform: rotate(-60deg);
 	transform: scale(2,2);
-	transform: skew(25deg,10deg);
+	transform: skew(25deg,10deg);*/
 }
 
 #jump_top, #translation {
 max-width:10%;
 }
-
 
 /*responsive design*/
 
@@ -317,7 +315,7 @@ max-width:10%;
 	
 	}
 	
-	/* Tablet Landscape, pc/laptop monitor */
+/* Tablet Landscape, pc/laptop monitor */
 @media screen and (max-width: 1024px) {
     .box_rs_media{
         width: 30%;
@@ -360,5 +358,3 @@ max-width:10%;
 	}
     
 }
-
-    
